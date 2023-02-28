@@ -1,5 +1,5 @@
 
-# Movie Ratings Microservices
+# Movie Ratings using Microservices
 
 A group of microservices to handle the operation of a rating movie application.
 
