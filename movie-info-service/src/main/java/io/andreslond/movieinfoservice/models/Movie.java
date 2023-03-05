@@ -1,4 +1,4 @@
-package models;
+package io.andreslond.movieinfoservice.models;
 
 public class Movie {
 
