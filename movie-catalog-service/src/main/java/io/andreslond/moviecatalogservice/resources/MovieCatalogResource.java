@@ -22,9 +22,6 @@ public class MovieCatalogResource {
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId) {
 
-        RestTemplate restTemplate = new RestTemplate();
-
-
         // get all rated movie IDs
         List<Rating> ratings = Arrays.asList(
                 new Rating("1234", 4),
