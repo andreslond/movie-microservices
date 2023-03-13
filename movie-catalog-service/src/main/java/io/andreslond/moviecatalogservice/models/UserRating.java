@@ -2,16 +2,16 @@ package io.andreslond.moviecatalogservice.models;
 
 import java.util.List;
 
-public class RatingsData {
+public class UserRating {
 
     private String userName;
 
     private List<Rating> ratings;
 
-    public RatingsData() {
+    public UserRating() {
     }
 
-    public RatingsData(String userName, List<Rating> ratings) {
+    public UserRating(String userName, List<Rating> ratings) {
         this.userName = userName;
         this.ratings = ratings;
     }
