@@ -39,7 +39,7 @@ public class MovieCatalogResource {
             //Movie ratedMovie = restTemplate.getForObject("http://localhost:8082/movies/" + rating.getMovieId(), Movie.class);
             Movie ratedMovie = webclientBuilder.build()
                     .get()
-                    .uri("http://movie-info-service/movies/" + rating.getMovieId())
+                    .uri("http://MOVIE-INFO-SERVICE/movies/" + rating.getMovieId())
                     .retrieve()
                     .bodyToMono(Movie.class)
                     .block();
