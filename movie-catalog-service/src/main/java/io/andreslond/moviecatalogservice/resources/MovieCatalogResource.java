@@ -1,5 +1,6 @@
 package io.andreslond.moviecatalogservice.resources;
 
+import com.netflix.discovery.DiscoveryClient;
 import io.andreslond.moviecatalogservice.models.CatalogItem;
 import io.andreslond.moviecatalogservice.models.Movie;
 import io.andreslond.moviecatalogservice.models.UserRating;
@@ -21,6 +22,9 @@ public class MovieCatalogResource {
 
     @Autowired
     private WebClient.Builder webclientBuilder;
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId) {
