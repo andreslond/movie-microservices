@@ -4,15 +4,12 @@ public class Movie {
 
     private String movieId;
     private String name;
-    private String director;
+    private String overview;
 
-    public Movie() {
-    }
-
-    public Movie(String movieId, String name, String director) {
+    public Movie(String movieId, String name, String overview) {
         this.movieId = movieId;
         this.name = name;
-        this.director = director;
+        this.overview = overview;
     }
 
     public String getMovieId() {
@@ -31,11 +28,11 @@ public class Movie {
         this.name = name;
     }
 
-    public String getDirector() {
-        return director;
+    public String getOverview() {
+        return overview;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
+    public void setOverview(String overview) {
+        this.overview = overview;
     }
 }
